@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y wget libicu-dev libjpeg-dev libpng-dev 
     --with-freetype-dir=/usr/include/ \
     --with-png-dir=/usr/include/ \
     --with-jpeg-dir=/usr/include/ && \
-    docker-php-ext-install pdo pdo_mysql gd intl && \
+    docker-php-ext-install pdo pdo_mysql gd intl zip && \
     a2enmod rewrite
 
 RUN wget https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.stretch_amd64.deb
