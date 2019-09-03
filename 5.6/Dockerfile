@@ -6,5 +6,5 @@ RUN apt-get update && apt-get install -y libjpeg-dev libpng-dev libfreetype6-dev
     --with-freetype-dir=/usr/include/ \
     --with-png-dir=/usr/include/ \
     --with-jpeg-dir=/usr/include/ && \
-    docker-php-ext-install pdo pdo_mysql gd && \
+    docker-php-ext-install pdo pdo_mysql gd mysql && \
     a2enmod rewrite
